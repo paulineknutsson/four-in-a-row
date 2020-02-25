@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!--Doctype används för att webläsaren ska kunna 
+                förstå vilken standard vi använder i vår kod -->
+<html lang="sv" >
+    <head>
+        <title>Detta är vårt spel</title>
+        <link rel="stylesheet" href="lab2.css">
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+            <a href = "test.html">uppdatera sidan</a>
+            <header>
+                <h1>Välkommen till fyra-i-rad</h1>
+                <div class = "gif">
+                        <iframe src="https://giphy.com/embed/3o7aCYSzqQufYAGEKc" width="200" height="200"  class="giphy-embed" allowFullScreen></iframe>
+
+                </div>
+            </header>
+            <section id = "hej">
+                    <h3>Ange hur många rutor ?x? ditt bräde ska ha:</h3>
+                    <form id="form" onsubmit="return false;">
+                            <input type="number" id="userInput">
+                            <input type="submit" onclick="createGameboard()">
+                    </form>
+
+                    <h3>Ange hur många markörer i rad som krävs för att vinna:</h3>
+                    <form onsubmit="return false;">
+                            <input type="number" id="userInput2">
+                            <input type="submit" onclick="numForWin()">
+                    </form>
+            </section>
+
+            <div class = "gameboard">
+
+                <script src="lab2.js"></script>
+            </div>
+
+    </body>
+
+
+</html>
